@@ -1,0 +1,621 @@
+/* Universal Style */
+
+*{
+    font-family: 'Arvo';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+/*Header for all pages*/
+
+.top-banner {
+    list-style: none;
+    padding: 10px 25px;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    display: flex; /* Use Flexbox */
+    justify-content: space-between; /* Pushes elements to far left and right */
+    align-items: center; /* Vertically aligns the items */
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.right img {
+    object-fit: contain; /* Ensures the image maintains aspect ratio */
+    height: auto;
+    max-height: 40px;
+}
+
+.left, .right {
+    display: flex;
+    align-items: center; /* Ensures proper vertical alignment for both elements */
+}
+
+.nav{
+    list-style: none;
+    padding: 20px 0px;
+    margin: 0;
+    text-align: center;
+    background-color: goldenrod;
+    width: 100%;
+    top: 0;
+}
+
+.nav li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.nav a:hover {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.nav a.active {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+/*Media queries for the nav*/
+
+@media (max-width: 768px) {
+    .top-banner {
+        width: 100vw;
+        height: auto;
+    }
+    
+    .nav {
+        width: 100vw;
+        margin: 0;
+        padding: 2vh 0vh;
+    }
+}
+/*index.html*/
+
+.hero-banner {
+    position: relative;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-content{
+    z-index: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content h1{
+    width: 40%;
+    margin: 5vh;
+    color: white;
+}
+
+
+.hero-banner img{
+    filter: blur(10px) brightness(0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-banner p{
+    font-size: x-large;
+}
+
+#learn-button {
+    text-align: center;
+    display: inline-block;
+}
+
+#learn-button a{
+    border: 2px solid white;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#learn-button a:hover{
+    box-shadow: 0px 0px 15px 10px rgba(218, 165, 32);
+}
+
+.about{
+    text-align: center;
+    width: 100%;
+}
+
+.about h1{
+    padding: 20px 0px;
+}
+
+.about p{
+    padding: 0 25px;
+    line-height: 1.5;
+}
+
+.about a{
+    font-weight: bold;
+    color: black;
+
+}
+
+#int-map{
+    margin: 30px;
+}
+
+.upcoming-events{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.upcoming-events table{
+    width: 50%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.upcoming-events a{
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.upcoming-events a:hover{
+    text-decoration: none;
+    color: goldenrod;
+    border: 2px solid goldenrod;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.upcoming-events h4 {
+    padding: 2vh;
+}
+
+/*Media queries for index.html*/
+
+@media (max-width: 768px) {
+    .hero-banner{
+        width: 100vw;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .hero-content{
+        font-size: 3vw;
+        padding: 25px;
+    }
+
+    .hero-content h1 {
+        width: 90%;
+    }
+
+    .about {
+        width: 100vw;
+    }
+
+    #int-map {
+        width: 90vw;
+        height: 40vh;
+        margin: 5vh 0vh;
+    }
+
+    .upcoming-events {
+        width: 100vw;
+    }
+
+    .upcoming-events table {
+        width: 80vw;
+    }
+}
+
+
+/*Footer for all pages*/
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0px;
+    background-color: goldenrod;
+    border-spacing: 75px 20px;
+}
+
+.footer th{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 550;
+    text-align: left;
+}
+
+.footer td{
+    font-size: 16px;
+    font-weight: lighter;
+    text-align: left;
+}
+
+.footer a{
+    color: black;
+}
+
+/*Media queries for the footer*/
+@media (max-width: 768px) {
+    .footer {
+        width: 100vw;
+        padding: 2vh;
+        margin: 0;
+        border-spacing: 4vh 3vh;
+    }
+
+    .footer th {
+        font-size: 3vh;
+        text-align: left;
+    }
+
+    .footer td {
+        font-size: 1.5vh;
+        text-align: left;
+    }
+}
+
+
+/* history.html*/
+
+.page-title{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.first-block{
+    display: flex; /* Enable flexbox */
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Vertically centers the image and text */
+    gap: 20px; /* Add some space between the text and the image */
+    padding: 20px; /* Optional: Padding around the block */
+}
+
+.first-block img{
+    width: 35%; /* Set a reasonable width for the image */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Make sure the image fits well */
+}
+
+.text-content{
+    width: 60%; /* Set width for the text content */
+}
+
+.text-content h3{
+    padding-bottom: 20px;
+}
+
+.second-block{
+    display: flex; /* Enable flexbox */
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Vertically centers the image and text */
+    gap: 20px; /* Add some space between the text and the image */
+    padding: 20px; /* Optional: Padding around the block */
+    flex-direction: row-reverse;
+}
+
+.second-block img{
+    width: 35%; /* Set a reasonable width for the image */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Make sure the image fits well */
+}
+
+img{
+    border-radius: 20px;
+}
+
+/* events.html */
+
+.events-title{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.event-container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-bottom: 20px;
+}
+
+.annual-picnic{
+    text-align: center;
+    display: grid;
+    place-items: center;
+    padding: 0px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    width: 50%;
+    margin: auto;
+    padding: 30px;
+}
+
+.annual-picnic a{
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.annual-picnic a:hover{
+    text-decoration: none;
+    color: goldenrod;
+    border: 2px solid goldenrod;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.annual-gala{
+    text-align: center;
+    display: grid;
+    place-items: center;
+    padding: 0px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    width: 50%;
+    margin: auto;
+    padding: 30px;
+}
+
+.annual-gala a{
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.annual-gala a:hover{
+    text-decoration: none;
+    color: goldenrod;
+    border: 2px solid goldenrod;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+/*gallery.html*/
+.coming-soon{
+    padding: 60px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.coming-soon h1{
+    text-align: center;
+}
+
+.coming-soon h3{
+    text-align: center;
+    width: 30%;
+}
+
+/*sponsors.html*/
+.top-text{
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-content{
+    width: 40%;
+    text-align: center;
+}
+
+.spotlight-title{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.spotlight-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.sponsor-spotlight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px; /* Adjust as necessary */
+    height: 400px; /* Ensure this is uniform */
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: border 0.3s ease, width 0.3s ease, height 0.3s ease;
+}
+
+.spotlight-image {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    border-radius: 0px;
+}
+
+.spotlight-content {
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease-in, 0.1s ease-out;
+    transform: translateY(20px); /* Shifted down initially */
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    transition-delay: 0s;
+}
+
+.sponsor-spotlight:hover {
+    width: 550px; /* Expands the container on hover */
+    height: 550px;
+    border: 2px solid #000; /* Adjust border */
+}
+
+.sponsor-spotlight:hover .spotlight-content {
+    opacity: 1; /* Makes the description visible */
+    transform: translateY(-10%); /* Moves the content up to its normal position */
+    transition-delay: 0.5s;
+}
+
+.sponsor-spotlight:hover .spotlight-image {
+    transform: scale(0.75) translateY(-50%);
+    border-radius: 0px;
+}
+
+.title-gold{
+    padding-top: 100px;
+    padding-bottom: 25px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.gold-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    margin: 20px 0px;
+}
+
+.sponsor-gold{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 325px; /* Adjust as necessary */
+    height: 325px;
+    padding: 30px;
+}
+
+.image-gold{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.content-gold{
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.spotlight-container a{
+    text-decoration: none;
+    color: black;
+}
+
+.gold-container a{
+    text-decoration: none;
+    color: black;
+}
+
+.title-silver{
+    padding-top: 100px;
+    padding-bottom: 25px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.silver-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0px;
+    padding-bottom: 80px;
+}
+
+.sponsor-silver{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 210px; /* Adjust as necessary */
+    height: 210px;
+    padding: 30px;
+}
+
+.image-silver{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.content-silver{
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.silver-container a{
+    text-decoration: none;
+    color: black;
+}
