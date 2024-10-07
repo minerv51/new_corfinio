@@ -36,6 +36,10 @@
     align-items: center; /* Ensures proper vertical alignment for both elements */
 }
 
+.hamburger {
+    display: none;
+}
+
 .nav{
     list-style: none;
     padding: 20px 0px;
@@ -82,13 +86,36 @@
         width: 100vw;
         height: auto;
     }
+}
+
+@media (max-width: 849px) {
+    .hamburger{
+        display: block;
+        font-size: 3vh;
+        border: 1px black solid;
+        border-radius: 5px;
+        width: 10%;
+        margin: auto;
+        padding: 0.25vh;
+    }
+
+    .hamburger:hover {
+        cursor: pointer;
+    }
     
-    .nav {
-        width: 100vw;
-        margin: 0;
-        padding: 2vh 0vh;
+    .menu {
+        display: none;
+    }
+
+    .menu.show{
+        padding: 1.25vh;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
     }
 }
+
 /*index.html*/
 
 .hero-banner {
@@ -222,6 +249,7 @@
     .hero-content{
         font-size: 3vw;
         padding: 25px;
+        margin-bottom: 3vh;
     }
 
     .hero-content h1 {
@@ -277,23 +305,37 @@
     color: black;
 }
 
+.secondary-footer {
+    display: none;
+}
+
 /*Media queries for the footer*/
 @media (max-width: 768px) {
     .footer {
+        display: none;
+    }
+
+    .secondary-footer {
+        list-style: none;
+        text-decoration: none;
+        color: black;
         width: 100vw;
-        padding: 2vh;
+        padding: 5vh;
         margin: 0;
         border-spacing: 4vh 3vh;
+        display: flex;
+        background-color: goldenrod;
+        justify-content: space-evenly;
+        text-align: center;
     }
 
-    .footer th {
-        font-size: 3vh;
-        text-align: left;
+    .secondary-footer li {
+        display: inline-block;
+        font-size: 4vh;
     }
 
-    .footer td {
-        font-size: 1.5vh;
-        text-align: left;
+    .secondary-footer a {
+        color: black;
     }
 }
 
@@ -345,6 +387,19 @@
 img{
     border-radius: 20px;
 }
+
+/*Media queries for history.html*/
+
+@media (max-width: 1023px) {
+    .text-content {
+        width: 100%;
+    }
+
+    .historical-img {
+        display: none;
+    }
+}
+
 
 /* events.html */
 

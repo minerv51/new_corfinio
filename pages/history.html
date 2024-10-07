@@ -9,19 +9,23 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script src="../assets/js/script.js" defer></script>
     </head>
     <body>
         <ul class="top-banner">
             <li class="left">The Corfinio Revival</li>
             <li class="right"><img src="../assets/images/Corfinio-Logo.png"></li>
         </ul>
-        <ul class="nav">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="history.html" class="active">History</a></li>
-            <li><a href="../pages/events.html">Events</a></li>
-            <li><a href='../pages/gallery.html'>Gallery</a></li>
-            <li><a href="../pages/sponsors.html">Sponsors</a></li>
-        </ul>
+        <nav class="nav">
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+            <ul class="menu" id="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="history.html" class="active">History</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href='gallery.html'>Gallery</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+            </ul>
+        </nav>
         <div class="page-title">
             <h1>Corfinio's History</h1>
         </div>
@@ -37,7 +41,7 @@
                 <br>
                 <p>Though it never regained the political significance it had during the Social War, Corfinio remained a settlement of cultural and historical importance, with its ancient ruins and medieval structures serving as a reminder of its storied past. Today, Corfinio is not only a point of interest for historians and archaeologists but also for those seeking to reconnect with the cultural heritage of the region, as seen in modern efforts like the Corfinio Revival, which celebrates its legacy and fosters community ties among descendants of the area.</p>
             </div>
-            <img src="../assets/images/aerial.jpg" alt="Aerial view of the main square in Corfinio, Italy, featuring circular stone patterns on the ground, surrounded by historic buildings with tiled roofs, and narrow streets leading into the town.">
+            <img src="../assets/images/aerial.jpg" alt="Aerial view of the main square in Corfinio, Italy, featuring circular stone patterns on the ground, surrounded by historic buildings with tiled roofs, and narrow streets leading into the town." class="historical-img">
         </div>
         <br>
         <br>
@@ -50,7 +54,7 @@
                 <br>
                 <p>By the 2nd century BC, Rome’s dominance over central Italy began to exert pressure on the Italic tribes, including the Paeligni. This tension would later lead to Corfinium's pivotal role in the Social War (91-88 BCE), when it became the capital of the Italic League’s rebellion against Roman rule. However, before the Social War, Corfinium's identity was deeply rooted in its Italic heritage, standing as a symbol of autonomy and regional power.</p>
             </div>
-            <img src="../assets/images/Fontana_Di_Gemma.jpg" alt="Fontana Di Gemma, a fountain in Corfinio, Italy, featuring a statue of a woman holding a jug above her head, surrounded by smaller statues of children in a circular stone basin with a building in the background.">
+            <img src="../assets/images/Fontana_Di_Gemma.jpg" alt="Fontana Di Gemma, a fountain in Corfinio, Italy, featuring a statue of a woman holding a jug above her head, surrounded by smaller statues of children in a circular stone basin with a building in the background." class="historical-img">
         </div>      
         <br>
         <br>
@@ -63,7 +67,7 @@
                 <br>
                 <p>Although the rebellion was ultimately suppressed by 88 BCE, it led to a major political shift. Rome, recognizing the sacrifices of the Italic allies, granted Roman citizenship to all free inhabitants of Italy. While Corfinio's prominence faded after the war, its brief status as the capital of the Italic League remains a symbol of the struggle for equality and self-determination in ancient Italy.</p>
             </div>
-            <img src="../assets/images/historical_monument_1.jpg" alt="Ruins of an ancient stone wall in Corfinio, Italy, featuring two large, weathered stone structures with trees and mountains in the background under a clear sky.">
+            <img src="../assets/images/historical_monument_1.jpg" alt="Ruins of an ancient stone wall in Corfinio, Italy, featuring two large, weathered stone structures with trees and mountains in the background under a clear sky." class="historical-img">
         </div>
         <div class="second-block">
             <div class="text-content">
@@ -74,7 +78,7 @@
                 <br>
                 <p>Despite its incorporation into the Roman Empire, Corfinio never regained the political prominence it had briefly held during the Social War. Over time, the town’s importance diminished as Rome shifted its attention to larger, more strategically located cities. However, Corfinio remained a peaceful, rural settlement throughout the Roman period, maintaining its role as a modest center of local governance and culture in the heart of Italy.</p>
             </div>
-            <img src="../assets/images/coin.png" alt="Ancient coin minted in Corfinio, featuring the head of Italia, a personification of Italy, adorned with a laurel wreath.">
+            <img src="../assets/images/coin.png" alt="Ancient coin minted in Corfinio, featuring the head of Italia, a personification of Italy, adorned with a laurel wreath." class="historical-img">
         </div>
         <div class="first-block">
             <div class="text-content">
@@ -85,7 +89,7 @@
                 <br>
                 <p>By the late medieval period, Corfinio had receded into the background of Italian history, far removed from the political and military struggles of the larger kingdoms and empires. While the town retained its local religious and agricultural significance, it was no longer a focal point of power or trade. The town’s medieval decline mirrored that of many smaller Italian settlements, as power became concentrated in larger cities and regional capitals.</p>
             </div>
-            <img src="../assets/images/corfinio_cathedral.jpg" alt="Basilica Chiesa di San Pelino, a historic Romanesque church in Corfinio, Italy, featuring its characteristic stone architecture, arched windows, and fortified walls under a clear blue sky.">
+            <img src="../assets/images/corfinio_cathedral.jpg" alt="Basilica Chiesa di San Pelino, a historic Romanesque church in Corfinio, Italy, featuring its characteristic stone architecture, arched windows, and fortified walls under a clear blue sky." class="historical-img">
         </div>
         <div class="second-block">
             <div class="text-content">
@@ -96,7 +100,7 @@
                 <br>
                 <p>In contemporary times, Corfinio has embraced its heritage as a cornerstone of local identity. The Corfinio Revival, a recent initiative to reconnect the diaspora and foster a sense of community, has brought new life to the town. Cultural festivals and historical events celebrate Corfinio’s ancient past while also promoting a vision for the future. Though small in size, Corfinio today stands as a testament to the resilience of its people and the enduring significance of its history.</p>
             </div>
-            <img src="../assets/images/corfinio_revival.jpeg" alt="Group photo of attendees at the 2024 Annual Corfinio Revival Picnic, gathered in front of a playground, surrounded by trees, with participants of all ages smiling and posing for the camera.">
+            <img src="../assets/images/corfinio_revival.jpeg" alt="Group photo of attendees at the 2024 Annual Corfinio Revival Picnic, gathered in front of a playground, surrounded by trees, with participants of all ages smiling and posing for the camera." class="historical-img">
         </div>
         <table class="footer">
             <tr>
